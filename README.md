@@ -1,75 +1,57 @@
-# React + TypeScript + Vite
+# fuste-r Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source for christianbookheimer.com, a small React + TypeScript site built with Vite.
 
-Currently, two official plugins are available:
+Summary of work included in this repo
+- Added a kinetic canvas background animation component.
+- Replaced placeholder avatar with a WebP avatar located at `src/assets/avatar.webp`.
+- Updated contact links to point to GitHub, LinkedIn, and added a `boot.dev` link.
+- Fixed production asset paths by setting Vite `base: './'` so assets load correctly on GitHub Pages.
+- Added SEO enhancements: canonical link, Open Graph + Twitter cards, JSON-LD person data.
+- Created `public/robots.txt` and `public/sitemap.xml`.
+- Implemented CI to build and publish `dist/` to GitHub Pages (`.github/workflows/deploy-pages.yml`) and fixed workflow issues (Node version, permissions, artifact publishing).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Getting started
+1. Install dependencies:
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+2. Development:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run dev
+# open http://localhost:5173
 ```
+
+3. Build for production:
+
+```bash
+npm run build
+npm run preview
+# preview at http://localhost:4173
+```
+
+Deployment
+- This project is published to GitHub Pages. The workflow builds the app and publishes `./dist` to the `gh-pages` branch.
+- The repository includes a `CNAME` for `christianbookheimer.com`.
+- If you need to publish manually:
+
+```bash
+# build
+npm run build
+# copy dist to a branch or use git worktree, then push to gh-pages
+```
+
+Notes & troubleshooting
+- If animations don't appear after deploy, ensure `vite.config.ts` has `base: './'` so assets use relative URLs.
+- CI requires workflow-level `permissions` (`contents: write`, `pages: write`, `id-token: write`) so `GITHUB_TOKEN` can publish pages.
+- Node version for CI is set to a modern LTS (Node 24) to match bundler requirements.
+
+Contributing
+- Fixes, improvements, or updated content welcome — open a PR.
+
+License
+- This project uses the repository's default license (see root files).
+
