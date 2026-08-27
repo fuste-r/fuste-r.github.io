@@ -96,22 +96,21 @@ function App() {
             <div className="grid gap-6 md:grid-cols-2">
               <div className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
                 <p className="mb-5 text-base leading-8 text-white/70">
-                  I build practical, high-impact software with a strong focus on usability,
-                  maintainability, and business value. My work blends product thinking with
-                  engineering discipline, helping teams turn ideas into polished, dependable tools.
+                  I’m a computer science student focused on building practical, reliable software that solves real problems. 
+                  I enjoy working across the stack, from designing user-friendly interfaces to developing backend systems 
+                  and working with Linux, networking, and embedded hardware.
                 </p>
                 <p className="text-base leading-8 text-white/70">
-                  Whether I’m building a customer-facing app, an internal workflow, or a modern
-                  API-driven platform, I aim for elegant systems that are easy to understand,
-                  scale smoothly, and deliver a great user experience.
+                  My projects combine software engineering with hands-on problem solving. 
+                  I’m particularly interested in web development, automation, systems programming, 
+                  and understanding how software works from the application layer down to the underlying hardware.
                 </p>
               </div>
               <div className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
                 <p className="text-base leading-8 text-white/70">
-                  I enjoy collaborating closely with designers, stakeholders, and engineers to
-                  solve meaningful problems. I’m especially interested in web technologies,
-                  automation, performance optimization, and building robust interfaces that users
-                  trust and enjoy using.
+                 I value clean, maintainable code and thoughtful design, and I’m always looking for opportunities to turn ideas into useful, dependable tools. 
+                 I’m currently expanding my experience through personal projects, coursework, 
+                 and hands-on development with technologies like Java, Go, JavaScript, Linux, and embedded platforms.
                 </p>
               </div>
             </div>
@@ -129,12 +128,13 @@ function App() {
 
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {[
-                ["Frontend", "HTML, CSS, JavaScript, TypeScript, React, Next.js"],
-                ["Backend", "Node.js, Express, Python, REST APIs, Authentication"],
-                ["Database", "PostgreSQL, MySQL, MongoDB, Prisma, SQL Modeling"],
-                ["DevOps", "Docker, CI/CD, Linux, Deployment Automation, Cloud Hosting"],
-                ["Product", "UX Thinking, Agile Delivery, Prototyping, Requirements Analysis"],
-                ["Quality", "Testing, Performance, Debugging, Accessibility, Code Reviews"],
+                ["Frontend", "HTML, CSS, JavaScript"],
+                ["Backend", "Java, Python, Go"],
+                ["Systems", "Linux, MIPS, Computer Architecture, Networking"],
+                ["Embedded", "C/C++, ESP32, Raspberry Pi, Microcontrollers"],
+                ["DevOps", "Git, GitHub, Docker, CI/CD, Linux, Deployment"],
+                ["Tools", "GitHub Pages, GoDaddy, Arduino IDE"]
+                
               ].map(([title, body]) => (
                 <div key={title} className="rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-white/70 backdrop-blur-sm">
                   <strong className="mb-2 block text-base text-white">{title}</strong>
@@ -157,23 +157,23 @@ function App() {
             <div className="grid gap-6 lg:grid-cols-3">
               {[
                 {
-                  title: "Workflow Dashboard",
+                  title: "Lorem Ipsum",
                   description:
-                    "A business operations dashboard for monitoring tasks, approvals, and KPI trends across multiple teams.",
+                    "placeholder.",
                   colors: "linear-gradient(135deg, rgba(59,130,246,0.8), rgba(14,165,233,0.2))",
                   tags: ["React", "Node", "PostgreSQL"],
                 },
                 {
-                  title: "Customer Portal",
+                  title: "lorem Ipsum",
                   description:
-                    "A clean customer-facing portal enabling account access, subscriptions, and support workflows in a single experience.",
+                    "placeholder.",
                   colors: "linear-gradient(135deg, rgba(34,197,94,0.7), rgba(56,189,248,0.2))",
                   tags: ["Next.js", "Auth", "API"],
                 },
                 {
-                  title: "Automation Toolkit",
+                  title: "lorem Ipsum",
                   description:
-                    "A small internal automation suite that reduced manual work, improved task visibility, and sped up team operations.",
+                    "placeholder.",
                   colors: "linear-gradient(135deg, rgba(251,146,60,0.72), rgba(244,63,94,0.2))",
                   tags: ["Python", "Automation", "CLI"],
                 },
@@ -209,21 +209,51 @@ function App() {
             <div className="grid gap-6 md:grid-cols-2">
               <div className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
                 <p className="text-base leading-8 text-white/70">
-                  I’m open to freelance work, product partnerships, and full-time development
-                  opportunities. If you have an idea, project, or team that needs a thoughtful
-                  engineer, I’d love to hear about it.
+                  I’m open to freelance projects, collaborations, and full-time software development opportunities. If you have an idea, project, 
+                  or team that could use a developer who enjoys solving problems and building practical software, I’d love to hear from you.
                 </p>
-                <a href="mailto:hello@christianbookheimer.com" className="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-[#161618] transition hover:bg-white/90">
-                  hello@christianbookheimer.com
+                <a href="mailto:cjbookheimer@gmail.com" className="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-[#161618] transition hover:bg-white/90">
+                  cjbookheimer@gmail.com
                 </a>
               </div>
 
               <div className="rounded-3xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm">
                 <ul className="space-y-4 text-white/70">
-                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3"><strong className="text-white">Email</strong><span>hello@christianbookheimer.com</span></li>
-                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3"><strong className="text-white">Location</strong><span>Remote / Worldwide</span></li>
-                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3"><strong className="text-white">LinkedIn</strong><span>linkedin.com/in/christianbookheimer</span></li>
-                  <li className="flex items-start justify-between gap-4"><strong className="text-white">GitHub</strong><span>github.com/christianbookheimer</span></li>
+                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3"><strong className="text-white">Email</strong><span>cjbookheimer@gmail.com</span></li>
+                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3"><strong className="text-white">Location</strong><span>Remote / Philadelphia</span></li>
+                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3">
+                    <strong className="text-white">LinkedIn</strong>
+                    <a
+                      href="https://www.linkedin.com/in/christian-bookheimer-22818319b/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white/90"
+                    >
+                      linkedin.com/in/christian-bookheimer-22818319b
+                    </a>
+                  </li>
+                  <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3">
+                    <strong className="text-white">GitHub</strong>
+                    <a
+                      href="https://github.com/fuste-r"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white/90"
+                    >
+                      github.com/fuste-r
+                    </a>
+                  </li>
+                  <li className="flex items-start justify-between gap-4">
+                    <strong className="text-white">boot.dev</strong>
+                    <a
+                      href="https://boot.dev/your-profile"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/70 hover:text-white/90"
+                    >
+                      boot.dev/your-profile
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
