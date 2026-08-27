@@ -224,12 +224,12 @@ function App() {
                   <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3">
                     <strong className="text-white">LinkedIn</strong>
                     <a
-                      href="https://www.linkedin.com/in/christian-bookheimer-22818319b/"
+                      href="https://www.linkedin.com/in/christian-bookheimer/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/70 hover:text-white/90"
                     >
-                      linkedin.com/in/christian-bookheimer-22818319b
+                      linkedin.com/in/christian-bookheimer
                     </a>
                   </li>
                   <li className="flex items-start justify-between gap-4 border-b border-white/10 pb-3">
