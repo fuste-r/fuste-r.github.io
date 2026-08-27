@@ -30,9 +30,9 @@ function App() {
                   Building thoughtful software for real-world problems.
                 </h1>
                 <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-                  I’m Christian Bookheimer, a software developer focused on creating clean,
-                  reliable, and scalable digital experiences—from web apps to developer tools
-                  that help people work smarter.
+                 I’m Christian Bookheimer, a software developer focused on building clean, 
+                 reliable software, from web applications and developer tools to systems that solve 
+                 practical problems.
                 </p>
                 <div className="mt-8 flex flex-wrap gap-4">
                   <a href="#projects" className="rounded-full bg-white px-5 py-3 text-sm font-medium text-[#161618] transition hover:bg-white/90">
@@ -246,12 +246,12 @@ function App() {
                   <li className="flex items-start justify-between gap-4">
                     <strong className="text-white">boot.dev</strong>
                     <a
-                      href="https://boot.dev/your-profile"
+                      href="https://www.boot.dev/u/fuster"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white/70 hover:text-white/90"
                     >
-                      boot.dev/your-profile
+                      https://www.boot.dev/u/fuster
                     </a>
                   </li>
                 </ul>
