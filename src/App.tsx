@@ -60,11 +60,11 @@ function App() {
 
               <div className="flex justify-center lg:justify-end">
                 <div className="w-full max-w-sm rounded-[28px] border border-white/10 bg-white/5 p-5 shadow-2xl shadow-black/30 backdrop-blur-md">
-                  <div className="mb-5 relative h-44 w-full rounded-2xl overflow-hidden border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(74,158,255,0.55),_rgba(22,22,24,0.2)_55%)]">
+                  <div className="mb-5 w-full rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,_rgba(74,158,255,0.55),_rgba(22,22,24,0.2)_55%)]">
                     <img
                       src={avatar}
                       alt="Profile avatar"
-                      className="absolute inset-0 h-full w-full object-contain object-center"
+                      className="w-full h-auto rounded-2xl object-center"
                     />
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-[#0d0e10]/70 p-4">
