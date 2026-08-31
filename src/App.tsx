@@ -314,7 +314,11 @@ function HomePage() {
 
 function App() {
   const currentPath = typeof window !== "undefined" ? window.location.pathname : "/";
-  const isNotFound = currentPath !== "/";
+  const redirectPath =
+    typeof window !== "undefined"
+      ? new URLSearchParams(window.location.search).get("redirect")
+      : null;
+  const isNotFound = currentPath !== "/" || Boolean(redirectPath);
 
   return isNotFound ? <NotFoundPage /> : <HomePage />;
 }
