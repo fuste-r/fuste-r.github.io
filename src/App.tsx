@@ -1,7 +1,49 @@
 import KineticGrid from "@/components/ui/kinetic-grid";
 import avatar from "@/assets/avatar.webp";
+import ConstellationField from "@/components/ui/constellation-field";
 
-function App() {
+function NotFoundPage() {
+  return (
+    <div className="relative min-h-screen overflow-hidden bg-[#070914] text-white">
+      <div className="absolute inset-0">
+        <ConstellationField
+          mode="dark"
+          speed={1}
+          size={1}
+          strokeWidth={1}
+          length={1}
+          density={1}
+          opacity={1}
+          className="h-full w-full"
+        />
+      </div>
+
+      <div className="relative z-10 flex min-h-screen items-center justify-center px-6 py-16">
+        <div className="w-full max-w-xl rounded-[32px] border border-white/10 bg-[#0e1222]/70 p-8 text-center shadow-2xl shadow-black/40 backdrop-blur-md md:p-12">
+          <div className="mb-4 inline-flex rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.2em] text-cyan-300">
+            404 Error
+          </div>
+          <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+            You've reached uncharted territory.
+          </h1>
+          <p className="mt-6 text-base leading-8 text-slate-200/80">
+            The page you’re looking for is missing, misplaced, or simply hasn’t been built yet.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="/"
+              className="rounded-full bg-[#E6C879] px-5 py-3 text-sm font-medium text-[#0E1222] transition hover:bg-[#f0d89d]"
+            >
+              Go home
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HomePage() {
   return (
     <KineticGrid>
       <div className="min-h-screen text-white">
@@ -268,6 +310,13 @@ function App() {
       </div>
     </KineticGrid>
   );
+}
+
+function App() {
+  const currentPath = typeof window !== "undefined" ? window.location.pathname : "/";
+  const isNotFound = currentPath !== "/";
+
+  return isNotFound ? <NotFoundPage /> : <HomePage />;
 }
 
 export default App;
