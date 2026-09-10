@@ -209,6 +209,14 @@ function HomePage() {
                   image: scalarDiagram,
                 },
                 {
+                  title: "Asteroids",
+                  description:
+                    "A Python arcade game featuring asteroid fields, player movement, shooting, and collision handling.",
+                  colors: "linear-gradient(135deg, rgba(239,68,68,0.78), rgba(251,191,36,0.2))",
+                  tags: ["Python", "Game Development", "Collision Detection"],
+                  href: "https://github.com/fuste-r/Asteroids",
+                },
+                {
                   title: "Lorem Ipsum",
                   description:
                     "placeholder.",
@@ -221,13 +229,6 @@ function HomePage() {
                     "placeholder.",
                   colors: "linear-gradient(135deg, rgba(34,197,94,0.7), rgba(56,189,248,0.2))",
                   tags: ["Next.js", "Auth", "API"],
-                },
-                {
-                  title: "lorem Ipsum",
-                  description:
-                    "placeholder.",
-                  colors: "linear-gradient(135deg, rgba(251,146,60,0.72), rgba(244,63,94,0.2))",
-                  tags: ["Python", "Automation", "CLI"],
                 },
               ].map((project) => (
                 <article key={project.title} className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
