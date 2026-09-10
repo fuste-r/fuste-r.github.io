@@ -1,6 +1,8 @@
 import KineticGrid from "@/components/ui/kinetic-grid";
 import avatar from "@/assets/avatar.webp";
 import scalarDiagram from "@/assets/scalar_diagram.png";
+import enthusiastPreview from "@/assets/3d-enthusiast-preview.png";
+import asteroidsPreview from "@/assets/Screenshot_20260910_165314.png";
 import ConstellationField from "@/components/ui/constellation-field";
 
 function NotFoundPage() {
@@ -215,13 +217,16 @@ function HomePage() {
                   colors: "linear-gradient(135deg, rgba(239,68,68,0.78), rgba(251,191,36,0.2))",
                   tags: ["Python", "Game Development", "Collision Detection"],
                   href: "https://github.com/fuste-r/Asteroids",
+                  image: asteroidsPreview,
                 },
                 {
-                  title: "Lorem Ipsum",
+                  title: "3D-Enthusiast",
                   description:
-                    "placeholder.",
-                  colors: "linear-gradient(135deg, rgba(59,130,246,0.8), rgba(14,165,233,0.2))",
-                  tags: ["React", "Node", "PostgreSQL"],
+                    "A web project exploring 3D printing, filament, printers, and a community space for enthusiasts.",
+                  colors: "linear-gradient(135deg, rgba(14,165,233,0.8), rgba(45,212,191,0.2))",
+                  tags: ["HTML", "CSS", "3D Printing"],
+                  href: "https://github.com/fuste-r/3D-Enthusiast",
+                  image: enthusiastPreview,
                 },
                 {
                   title: "lorem Ipsum",
