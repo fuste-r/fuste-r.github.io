@@ -1,5 +1,6 @@
 import KineticGrid from "@/components/ui/kinetic-grid";
 import avatar from "@/assets/avatar.webp";
+import scalarDiagram from "@/assets/scalar_diagram.png";
 import ConstellationField from "@/components/ui/constellation-field";
 
 function NotFoundPage() {
@@ -199,6 +200,15 @@ function HomePage() {
             <div className="grid gap-6 lg:grid-cols-3">
               {[
                 {
+                  title: "Scalar Multiplier Processor Simulation",
+                  description:
+                    "A simulated processor for scalar multiplication of a 3x3 grid, built with Digital.",
+                  colors: "linear-gradient(135deg, rgba(168,85,247,0.72), rgba(14,165,233,0.2))",
+                  tags: ["Digital", "Processor Design", "Simulation"],
+                  href: "https://github.com/fuste-r/scalar_mult_Digital",
+                  image: scalarDiagram,
+                },
+                {
                   title: "Lorem Ipsum",
                   description:
                     "placeholder.",
@@ -221,9 +231,29 @@ function HomePage() {
                 },
               ].map((project) => (
                 <article key={project.title} className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-sm">
-                  <div className="h-44" style={{ background: project.colors }} />
+                  <div
+                    className="h-44 bg-cover bg-center"
+                    style={
+                      "image" in project
+                        ? { backgroundImage: `url(${project.image})` }
+                        : { background: project.colors }
+                    }
+                  />
                   <div className="p-6">
-                    <h3 className="mb-3 text-2xl font-semibold text-white">{project.title}</h3>
+                    <h3 className="mb-3 text-2xl font-semibold text-white">
+                      {"href" in project ? (
+                        <a
+                          href={project.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="transition hover:text-cyan-300"
+                        >
+                          {project.title}
+                        </a>
+                      ) : (
+                        project.title
+                      )}
+                    </h3>
                     <p className="text-base leading-7 text-white/70">{project.description}</p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {project.tags.map((tag) => (
