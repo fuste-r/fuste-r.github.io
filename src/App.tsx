@@ -193,7 +193,7 @@ function HomePage() {
                 Selected Work
               </div>
               <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">
-                Recent projects and product experiences.
+                Recent projects
               </h2>
             </div>
 
